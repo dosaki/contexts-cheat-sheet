@@ -16,8 +16,9 @@ jobs:
 
       - name: Output GitHub Context
         run: |
-          git pull
+          git fetch origin
           git checkout ${{ github.head_ref }}
+          git pull
           echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > pull_request.context.json
           git config --global user.name github-actions
           git config --global user.email 'github-actions@github.com'
