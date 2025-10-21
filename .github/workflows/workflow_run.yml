@@ -1,0 +1,16 @@
+name: Workflow Run Event
+
+on:
+  workflow_run:
+    workflows: ["Push Event"]
+    types:
+      - completed
+
+jobs:
+  output-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output GitHub Context
+        run: |
+          echo 'GitHub Context:'
+          echo '${{ toJson(github) }}'
