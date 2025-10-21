@@ -8,6 +8,7 @@ on:
 jobs:
   output-github-context:
     runs-on: ubuntu-latest
+    if: ${{ github.event.head_commit.author.name != 'github-actions' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
@@ -19,6 +20,11 @@ jobs:
           git fetch origin
           git checkout ${{ github.head_ref }}
           git pull
+          commit_author=$(git log -1 --pretty=%an)
+          if [ "$commit_author" = "github-actions" ]; then
+            echo "Last commit was made by github-actions. Exiting."
+            exit 0
+          fi
           echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > pull_request.context.json
           git config --global user.name github-actions
           git config --global user.email 'github-actions@github.com'
