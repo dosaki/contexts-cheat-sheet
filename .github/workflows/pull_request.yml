@@ -2,6 +2,8 @@ name: Pull Request Event
 
 on:
   pull_request:
+    branches:
+      - main
 
 jobs:
   output-github-context:
@@ -15,9 +17,10 @@ jobs:
       - name: Output GitHub Context
         run: |
           git pull
+          git checkout ${{ github.head_ref }}
           echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > pull_request.context.json
           git config --global user.name github-actions
           git config --global user.email 'github-actions@github.com'
           git add pull_request.context.json
           git commit -am "Updating pull_request.context.json"
-          git push
+          git push -u origin ${{ github.head_ref }}
