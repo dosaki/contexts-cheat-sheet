@@ -7,8 +7,8 @@
   "repository_owner": "dosaki",
   "repository_owner_id": "1957450",
   "repositoryUrl": "git://github.com/dosaki/contexts-cheat-sheet.git",
-  "run_id": "18687734784",
-  "run_number": "47",
+  "run_id": "18687740426",
+  "run_number": "48",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -122,7 +122,7 @@
       "teams_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/teams",
       "topics": [],
       "trees_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/git/trees{/sha}",
-      "updated_at": "2025-10-21T14:43:00Z",
+      "updated_at": "2025-10-21T14:43:16Z",
       "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet",
       "visibility": "public",
       "watchers": 0,
@@ -184,29 +184,29 @@
         "url": "https://api.github.com/users/dosaki",
         "user_view_type": "public"
       },
-      "artifacts_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964/artifacts",
-      "cancel_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964/cancel",
-      "check_suite_id": 48081979237,
-      "check_suite_node_id": "CS_kwDOQGdZ788AAAALMejHZQ",
-      "check_suite_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/check-suites/48081979237",
-      "conclusion": "success",
-      "created_at": "2025-10-21T14:42:58Z",
-      "display_title": "Initial set up",
+      "artifacts_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470/artifacts",
+      "cancel_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470/cancel",
+      "check_suite_id": 48082001345,
+      "check_suite_node_id": "CS_kwDOQGdZ788AAAALMekdwQ",
+      "check_suite_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/check-suites/48082001345",
+      "conclusion": "skipped",
+      "created_at": "2025-10-21T14:43:14Z",
+      "display_title": "Updating push.context.json",
       "event": "push",
       "head_branch": "main",
       "head_commit": {
         "author": {
-          "email": "dosaki@users.noreply.github.com",
-          "name": "Tiago Correia"
+          "email": "github-actions@github.com",
+          "name": "github-actions"
         },
         "committer": {
-          "email": "tco@keyholding.com",
-          "name": "Tiago Correia"
+          "email": "github-actions@github.com",
+          "name": "github-actions"
         },
-        "id": "1b20eaa06587eff48c365e312c2d37adda7f8c1d",
-        "message": "Initial set up",
-        "timestamp": "2025-10-21T14:38:50Z",
-        "tree_id": "68ec1cacd0432916b7583e4b7e7ba06b8de121c6"
+        "id": "549b07f18adf5f09e6bc1e0168afae9735d02902",
+        "message": "Updating push.context.json",
+        "timestamp": "2025-10-21T14:43:11Z",
+        "tree_id": "b92eccaea21ccef3682ba6a00682252eef2280b0"
       },
       "head_repository": {
         "archive_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/{archive_format}{/ref}",
@@ -276,13 +276,13 @@
         "trees_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/git/trees{/sha}",
         "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet"
       },
-      "head_sha": "1b20eaa06587eff48c365e312c2d37adda7f8c1d",
-      "html_url": "https://github.com/dosaki/contexts-cheat-sheet/actions/runs/18687725964",
-      "id": 18687725964,
-      "jobs_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964/jobs",
-      "logs_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964/logs",
+      "head_sha": "549b07f18adf5f09e6bc1e0168afae9735d02902",
+      "html_url": "https://github.com/dosaki/contexts-cheat-sheet/actions/runs/18687733470",
+      "id": 18687733470,
+      "jobs_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470/jobs",
+      "logs_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470/logs",
       "name": "Push Event",
-      "node_id": "WFR_kwLOQGdZ788AAAAEWeARjA",
+      "node_id": "WFR_kwLOQGdZ788AAAAEWeAu3g",
       "path": ".github/workflows/push.yml",
       "previous_attempt_url": null,
       "pull_requests": [],
@@ -355,10 +355,10 @@
         "trees_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/git/trees{/sha}",
         "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet"
       },
-      "rerun_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964/rerun",
+      "rerun_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470/rerun",
       "run_attempt": 1,
-      "run_number": 48,
-      "run_started_at": "2025-10-21T14:42:58Z",
+      "run_number": 49,
+      "run_started_at": "2025-10-21T14:43:14Z",
       "status": "completed",
       "triggering_actor": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1957450?v=4",
@@ -381,8 +381,8 @@
         "url": "https://api.github.com/users/dosaki",
         "user_view_type": "public"
       },
-      "updated_at": "2025-10-21T14:43:14Z",
-      "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687725964",
+      "updated_at": "2025-10-21T14:43:25Z",
+      "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/runs/18687733470",
       "workflow_id": 199658458,
       "workflow_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/actions/workflows/199658458"
     }
@@ -396,9 +396,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_374231c3-275d-4552-bec6-4ebda9871598",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_374231c3-275d-4552-bec6-4ebda9871598",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_374231c3-275d-4552-bec6-4ebda9871598",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_374231c3-275d-4552-bec6-4ebda9871598",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_374231c3-275d-4552-bec6-4ebda9871598"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_37f7221c-8156-4694-a375-707c638abb58",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_37f7221c-8156-4694-a375-707c638abb58",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_37f7221c-8156-4694-a375-707c638abb58",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_37f7221c-8156-4694-a375-707c638abb58",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_37f7221c-8156-4694-a375-707c638abb58"
 }
