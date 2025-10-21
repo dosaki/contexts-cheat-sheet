@@ -1,0 +1,24 @@
+name: Push Event
+
+on:
+  push:
+
+jobs:
+  output-github-context:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.head_commit.author.name != 'github-actions' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ssh-key: ${{ secrets.DEPLOYMENT_KEY }}
+
+      - name: Output GitHub Context
+        run: |
+          git pull
+          echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > push.context.json
+          git config --global user.name github-actions
+          git config --global user.email 'github-actions@github.com'
+          git add push.context.json
+          git commit -am "Updating push.context.json"
+          git push

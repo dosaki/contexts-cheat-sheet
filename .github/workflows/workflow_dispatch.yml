@@ -1,0 +1,32 @@
+name: Workflow Dispatch Event
+
+on:
+  workflow_dispatch:
+    inputs:
+      required-input:
+        description: 'A required input'
+        required: true
+        type: string
+      optional-input:
+        description: 'An optional input'
+        required: false
+        type: string
+
+jobs:
+  output-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ssh-key: ${{ secrets.DEPLOYMENT_KEY }}
+
+      - name: Output GitHub Context
+        run: |
+          git pull
+          echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > workflow_dispatch.context.json
+          git config --global user.name github-actions
+          git config --global user.email 'github-actions@github.com'
+          git add workflow_dispatch.context.json
+          git commit -am "Updating workflow_dispatch.context.json"
+          git push

@@ -1,0 +1,26 @@
+name: Workflow Run Event
+
+on:
+  workflow_run:
+    workflows: ["Push Event"]
+    types:
+      - completed
+
+jobs:
+  output-github-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ssh-key: ${{ secrets.DEPLOYMENT_KEY }}
+
+      - name: Output GitHub Context
+        run: |
+          git pull
+          echo '${{ toJson(github) }}' | sed 's/"token": .*/"token": "token-here"/g' > workflow_run.context.json
+          git config --global user.name github-actions
+          git config --global user.email 'github-actions@github.com'
+          git add workflow_run.context.json
+          git commit -am "Updating workflow_run.context.json"
+          git push
