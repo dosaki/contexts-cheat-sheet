@@ -2,13 +2,13 @@
   "token": "token-here"
   "job": "output-github-context",
   "ref": "refs/heads/main",
-  "sha": "fbdfd762d937d17601be24599b0054aabe19320c",
+  "sha": "cdbf42edd3a82e35e25876182546ae9d2d737615",
   "repository": "dosaki/contexts-cheat-sheet",
   "repository_owner": "dosaki",
   "repository_owner_id": "1957450",
   "repositoryUrl": "git://github.com/dosaki/contexts-cheat-sheet.git",
-  "run_id": "18688964056",
-  "run_number": "109",
+  "run_id": "18689018613",
+  "run_number": "112",
   "retention_days": "90",
   "run_attempt": "1",
   "artifact_cache_size_limit": "10",
@@ -27,31 +27,68 @@
   "ref_type": "branch",
   "secret_source": "Actions",
   "event": {
-    "after": "fbdfd762d937d17601be24599b0054aabe19320c",
+    "after": "cdbf42edd3a82e35e25876182546ae9d2d737615",
     "base_ref": null,
-    "before": "ab1de5b564bcfbc6897a5e65f196fce269ce34c0",
-    "commits": [],
-    "compare": "https://github.com/dosaki/contexts-cheat-sheet/compare/ab1de5b564bc...fbdfd762d937",
+    "before": "4f5e0c025b8f0a9803d28ca3cecef5b92e614d3d",
+    "commits": [
+      {
+        "author": {
+          "email": "github-actions@github.com",
+          "name": "github-actions",
+          "username": "invalid-email-address"
+        },
+        "committer": {
+          "email": "github-actions@github.com",
+          "name": "github-actions",
+          "username": "invalid-email-address"
+        },
+        "distinct": false,
+        "id": "4a2c082aeb5f6a29e91a60163763220532f23d4c",
+        "message": "Updating pull_request.context.json",
+        "timestamp": "2025-10-21T15:20:41Z",
+        "tree_id": "5ce9e0a4397377b59203548c9bdf8d0213adeb4c",
+        "url": "https://github.com/dosaki/contexts-cheat-sheet/commit/4a2c082aeb5f6a29e91a60163763220532f23d4c"
+      },
+      {
+        "author": {
+          "email": "dosaki@users.noreply.github.com",
+          "name": "Tiago Correia",
+          "username": "dosaki"
+        },
+        "committer": {
+          "email": "noreply@github.com",
+          "name": "GitHub",
+          "username": "web-flow"
+        },
+        "distinct": true,
+        "id": "cdbf42edd3a82e35e25876182546ae9d2d737615",
+        "message": "Merge pull request #3 from dosaki/awesome-branch\n\nAwesome branch",
+        "timestamp": "2025-10-21T16:25:35+01:00",
+        "tree_id": "b3add53f6092dc915e21d04efcd5a06f075ded42",
+        "url": "https://github.com/dosaki/contexts-cheat-sheet/commit/cdbf42edd3a82e35e25876182546ae9d2d737615"
+      }
+    ],
+    "compare": "https://github.com/dosaki/contexts-cheat-sheet/compare/4f5e0c025b8f...cdbf42edd3a8",
     "created": false,
     "deleted": false,
-    "forced": true,
+    "forced": false,
     "head_commit": {
       "author": {
-        "email": "tco@keyholding.com",
+        "email": "dosaki@users.noreply.github.com",
         "name": "Tiago Correia",
         "username": "dosaki"
       },
       "committer": {
-        "email": "tco@keyholding.com",
-        "name": "Tiago Correia",
-        "username": "dosaki"
+        "email": "noreply@github.com",
+        "name": "GitHub",
+        "username": "web-flow"
       },
       "distinct": true,
-      "id": "fbdfd762d937d17601be24599b0054aabe19320c",
-      "message": "Preventing PR workflow cycles",
-      "timestamp": "2025-10-21T16:20:22+01:00",
-      "tree_id": "5a46deb889e56607f6df23519efec7345da077f0",
-      "url": "https://github.com/dosaki/contexts-cheat-sheet/commit/fbdfd762d937d17601be24599b0054aabe19320c"
+      "id": "cdbf42edd3a82e35e25876182546ae9d2d737615",
+      "message": "Merge pull request #3 from dosaki/awesome-branch\n\nAwesome branch",
+      "timestamp": "2025-10-21T16:25:35+01:00",
+      "tree_id": "b3add53f6092dc915e21d04efcd5a06f075ded42",
+      "url": "https://github.com/dosaki/contexts-cheat-sheet/commit/cdbf42edd3a82e35e25876182546ae9d2d737615"
     },
     "pusher": {
       "email": "dosaki@users.noreply.github.com",
@@ -114,8 +151,8 @@
       "name": "contexts-cheat-sheet",
       "node_id": "R_kgDOQGdZ7w",
       "notifications_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/notifications{?since,all,participating}",
-      "open_issues": 1,
-      "open_issues_count": 1,
+      "open_issues": 0,
+      "open_issues_count": 0,
       "owner": {
         "avatar_url": "https://avatars.githubusercontent.com/u/1957450?v=4",
         "email": "dosaki@users.noreply.github.com",
@@ -141,7 +178,7 @@
       },
       "private": false,
       "pulls_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/pulls{/number}",
-      "pushed_at": 1761060234,
+      "pushed_at": 1761060335,
       "releases_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/releases{/id}",
       "size": 35,
       "ssh_url": "git@github.com:dosaki/contexts-cheat-sheet.git",
@@ -156,7 +193,7 @@
       "teams_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/teams",
       "topics": [],
       "trees_url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet/git/trees{/sha}",
-      "updated_at": "2025-10-21T15:05:11Z",
+      "updated_at": "2025-10-21T15:24:28Z",
       "url": "https://api.github.com/repos/dosaki/contexts-cheat-sheet",
       "visibility": "public",
       "watchers": 0,
@@ -186,7 +223,7 @@
     }
   },
   "workflow_ref": "dosaki/contexts-cheat-sheet/.github/workflows/push.yml@refs/heads/main",
-  "workflow_sha": "fbdfd762d937d17601be24599b0054aabe19320c",
+  "workflow_sha": "cdbf42edd3a82e35e25876182546ae9d2d737615",
   "repository_id": "1080515055",
   "triggering_actor": "dosaki",
   "workspace": "/home/runner/work/contexts-cheat-sheet/contexts-cheat-sheet",
@@ -194,9 +231,9 @@
   "event_path": "/home/runner/work/_temp/_github_workflow/event.json",
   "action_repository": "",
   "action_ref": "",
-  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_7b0ecbc5-7041-44a7-bf62-0aa3337fbec9",
-  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_7b0ecbc5-7041-44a7-bf62-0aa3337fbec9",
-  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_7b0ecbc5-7041-44a7-bf62-0aa3337fbec9",
-  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_7b0ecbc5-7041-44a7-bf62-0aa3337fbec9",
-  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_7b0ecbc5-7041-44a7-bf62-0aa3337fbec9"
+  "path": "/home/runner/work/_temp/_runner_file_commands/add_path_c90e7c1c-7bc6-4d0b-9059-1e2c712279b5",
+  "env": "/home/runner/work/_temp/_runner_file_commands/set_env_c90e7c1c-7bc6-4d0b-9059-1e2c712279b5",
+  "step_summary": "/home/runner/work/_temp/_runner_file_commands/step_summary_c90e7c1c-7bc6-4d0b-9059-1e2c712279b5",
+  "state": "/home/runner/work/_temp/_runner_file_commands/save_state_c90e7c1c-7bc6-4d0b-9059-1e2c712279b5",
+  "output": "/home/runner/work/_temp/_runner_file_commands/set_output_c90e7c1c-7bc6-4d0b-9059-1e2c712279b5"
 }
